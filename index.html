@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行政書士タイピング道場</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="title-container">
+        <img src="images/title.png" alt="行政書士タイピング道場" id="title-image">
+    </header>
+
+    <main>
+        <div class="game-area">
+            <div id="shihan-container">
+                <img id="shihan-image" src="images/shihan_idle.png" alt="ネコ師範">
+            </div>
+
+            <div id="game-container">
+                <div id="start-screen">
+                    <p>腕試し、するがよい。</p>
+                </div>
+                
+                <div id="question-screen" class="hidden">
+                    <div id="question-term"></div>
+                    <div id="question-yomigana"></div>
+                    <input type="text" id="input-area" placeholder="読み方を入力..." autocomplete="off" autocorrect="off" autocapitalize="off" inputmode="kana">
+                    <div id="feedback-message"></div>
+                    <div id="explanation"></div>
+                </div>
+
+                <div id="result-screen" class="hidden">
+                    <h2>成績</h2>
+                    <p>クリアタイム: <span id="final-time"></span></p>
+                    <p id="result-message"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="controls">
+            <button id="start-button">ゲームスタート</button>
+            <button id="retry-button" class="hidden">リトライ</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
